@@ -30,20 +30,19 @@ const BlogContainer = async ({ query, currentPage, limit }: Props) => {
   });
 
   return data.length <= 0 ? (
-    <RevealItem>
-      <div className="">Brak postów</div>
-    </RevealItem>
+    <div className="">Brak postów</div>
   ) : (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
       {data.map((p, i) => (
-        <RevealItem key={p.id}>
-          <BlogCard
-            title={p.title}
-            slug={p.slug}
-            excerpt={p.excerpt}
-            image={p.coverImage}
-          />
-        </RevealItem>
+        // <RevealItem>
+        <BlogCard
+          key={p.id}
+          title={p.title}
+          slug={p.slug}
+          excerpt={p.excerpt}
+          image={p.coverImage}
+        />
+        // </RevealItem>
       ))}
     </div>
   );
