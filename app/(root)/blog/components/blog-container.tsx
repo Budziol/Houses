@@ -36,7 +36,7 @@ const BlogContainer = async ({ query, currentPage, limit }: Props) => {
   ) : (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
       {data.map((p, i) => (
-        <RevealItem>
+        <RevealItem key={p.id}>
           <BlogCard
             key={p.id}
             title={p.title}
