@@ -2,9 +2,10 @@ import { db } from "@/lib/prisma";
 import { formatDate } from "@/utils/formatDate";
 import DeleteItem from "@/components/delete-item";
 import { deleteAdmin } from "../actions/deleteAdmin";
+import { User } from "@prisma/client";
 
 const AdminsTable = async () => {
-  const data = await db.user.findMany();
+  const data: User[] = await db.user.findMany();
 
   return data.length <= 0 ? (
     <div>Brak płatności</div>

@@ -1,6 +1,7 @@
 import { db } from "@/lib/prisma";
 import BlogCard from "../../components/Blog/blog-card";
 import { RevealItem } from "@/utils/Anim/reveal-item";
+import { Post } from "@prisma/client";
 
 type Props = {
   query: string;
@@ -19,7 +20,7 @@ const BlogContainer = async ({ query, currentPage, limit }: Props) => {
     }),
   };
 
-  const data = await db.post.findMany({
+  const data: Post[] = await db.post.findMany({
     where,
     take: limit,
     skip: (currentPage - 1) * limit,

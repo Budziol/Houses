@@ -1,6 +1,7 @@
 import { db } from "@/lib/prisma";
 import OfferCard from "../../components/Offer/offer-card";
 import { RevealItem } from "@/utils/Anim/reveal-item";
+import { Offer } from "@prisma/client";
 
 type Props = {
   query: string;
@@ -19,7 +20,7 @@ const OfferContainer = async ({ query, currentPage, limit }: Props) => {
     }),
   };
 
-  const data = await db.offer.findMany({
+  const data: Offer[] = await db.offer.findMany({
     where,
     take: limit,
     skip: (currentPage - 1) * limit,

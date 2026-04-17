@@ -1,8 +1,9 @@
 import { db } from "@/lib/prisma";
 import AdminBlogCard from "./admin-blog-card";
+import { Post } from "@prisma/client";
 
 const PostsContainer = async () => {
-  const data = await db.post.findMany();
+  const data: Post[] = await db.post.findMany();
 
   return data.length <= 0 ? (
     <div className="">Brak postów</div>

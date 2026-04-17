@@ -1,8 +1,9 @@
 import { db } from "@/lib/prisma";
 import AdminOfferCard from "./admin-offer-card";
+import { Offer } from "@prisma/client";
 
 const OfferContainer = async () => {
-  const data = await db.offer.findMany();
+  const data: Offer[] = await db.offer.findMany();
 
   return data.length <= 0 ? (
     <div className="">Brak ofert</div>
