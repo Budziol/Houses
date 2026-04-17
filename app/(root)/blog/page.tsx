@@ -49,11 +49,13 @@ const BlogPage = async ({ searchParams }: Props) => {
               </RevealItem>
             </div>
             <Suspense key={query + currentPage} fallback={<Loading />}>
-              <BlogContainer
-                query={query}
-                currentPage={currentPage}
-                limit={pageSize}
-              />
+              <RevealContainer>
+                <BlogContainer
+                  query={query}
+                  currentPage={currentPage}
+                  limit={pageSize}
+                />
+              </RevealContainer>
             </Suspense>
             <RevealItem>
               <div className="mx-auto">
