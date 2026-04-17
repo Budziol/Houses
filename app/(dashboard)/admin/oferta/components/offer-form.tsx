@@ -12,7 +12,7 @@ type Props = {
   defaultValues?: {
     title: string;
     slug: string;
-    coverImage: string;
+    coverImage: string | null;
     images: string[];
     description: string;
     price: string;
@@ -22,7 +22,7 @@ type Props = {
     garage: boolean;
     balcony: number;
     story: number;
-    model: string;
+    model: string | null;
     published: boolean;
     badge: string;
   };
