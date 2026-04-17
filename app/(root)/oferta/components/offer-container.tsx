@@ -36,8 +36,9 @@ const OfferContainer = async ({ query, currentPage, limit }: Props) => {
   ) : (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
       {data.map((o, i) => (
-        <RevealItem key={o.id}>
+        <RevealItem>
           <OfferCard
+            key={o.id}
             badge={o.badge}
             image={o.coverImage}
             title={o.title}
