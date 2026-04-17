@@ -1,0 +1,9 @@
+import { format } from "date-fns";
+
+export const formatDate = (date: Date) => {
+  return format(date, "yyyy-MM-dd");
+};
+
+export const formatDateWithHour = (date: Date) => {
+  return format(date, "yyyy-MM-dd HH:mm");
+};

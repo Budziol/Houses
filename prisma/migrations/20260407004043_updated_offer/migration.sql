@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "Offer" ALTER COLUMN "coverImage" DROP NOT NULL,
+ALTER COLUMN "model" DROP NOT NULL;
