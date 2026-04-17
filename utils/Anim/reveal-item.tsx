@@ -2,17 +2,9 @@
 
 import { motion } from "framer-motion";
 
-type Props = {
-  children: React.ReactNode;
-  className?: string;
-};
-
-export function RevealItem({ children, className }: Props) {
+export function RevealItem({ children, className }: any) {
   return (
     <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
       variants={{
         hidden: { opacity: 0, y: 20 },
         visible: {
