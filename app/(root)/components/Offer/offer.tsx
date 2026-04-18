@@ -11,13 +11,13 @@ const Offer = () => {
         <div className="max-w-[1440px] w-full mx-auto space-y-20 flex flex-col">
           <div className="flex flex-col lg:flex-row gap-10 justify-between items-center text-center lg:text-left">
             <div className="">
-              <RevealItem>
-                <h3 className="mt-2 uppercase text-[clamp(var(--text-lg),5vw,var(--text-2xl))] font-semiBold leading-none">
+              <RevealItem className={""}>
+                <h3 className="mt-2 uppercase text-[clamp(var(--text-lg),5vw,var(--text-2xl))] font-semiBold leading-none mx-auto lg:ml-0">
                   Nasza kolekcja
                 </h3>
               </RevealItem>
-              <RevealItem>
-                <h2 className="uppercase text-[clamp(var(--text-3xl),5vw,var(--text-4xl))] font-bold leading-none">
+              <RevealItem className={""}>
+                <h2 className="uppercase text-[clamp(var(--text-3xl),5vw,var(--text-4xl))] font-bold leading-none mx-auto lg:ml-0">
                   Wybierz swój dom
                 </h2>
               </RevealItem>

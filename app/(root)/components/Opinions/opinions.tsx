@@ -8,14 +8,14 @@ const Opinions = () => {
       <section id="opinions" className="min-h-screen w-full px-8 py-30 flex">
         <div className="max-w-[1440px] w-full m-auto space-y-20 flex flex-col">
           <div className="flex flex-col lg:flex-row gap-10 justify-between items-center text-center lg:text-left">
-            <div className="">
+            <div className="mr-auto">
               <RevealItem>
-                <h3 className="mt-2 uppercase text-[clamp(var(--text-lg),5vw,var(--text-2xl))] font-semiBold leading-none">
+                <h3 className="mt-2 uppercase text-[clamp(var(--text-lg),5vw,var(--text-2xl))] font-semiBold leading-none mr-auto">
                   Opinie
                 </h3>
               </RevealItem>
               <RevealItem>
-                <h2 className="uppercase text-[clamp(var(--text-3xl),5vw,var(--text-4xl))] font-bold leading-none">
+                <h2 className="uppercase text-[clamp(var(--text-3xl),5vw,var(--text-4xl))] font-bold leading-none text-left mr-auto">
                   Co mówią nasi klienci?
                 </h2>
               </RevealItem>

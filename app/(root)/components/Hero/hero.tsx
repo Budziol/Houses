@@ -10,10 +10,10 @@ const Hero = () => {
         <div className="max-w-[1440px] w-full mx-auto flex flex-col lg:flex-row gap-10">
           <div className="w-full lg:h-full flex flex-col justify-start lg:justify-center items-center lg:items-start gap-5">
             <div className="max-w-[575px] lg:mb-40 flex flex-col text-center lg:text-left">
-              <RevealItem>
+              <RevealItem className={"mx-auto lg:ml-0"}>
                 <h1 className="">Domy modułowe</h1>
               </RevealItem>
-              <RevealItem>
+              <RevealItem className={"mx-auto lg:ml-0"}>
                 <h2 className="">szybko, łatwo i bez stresu</h2>
               </RevealItem>
               <RevealItem>
