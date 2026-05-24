@@ -36,11 +36,11 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          {/* <div className="w-full min-h-[800px] lg:min-h-full"> */}
           <RevealItem className={"w-full"}>
-            <KVScene />
+            <div className="w-full md:min-h-[400px] lg:min-h-full">
+              <KVScene />
+            </div>
           </RevealItem>
-          {/* </div> */}
         </div>
       </section>
     </RevealContainer>

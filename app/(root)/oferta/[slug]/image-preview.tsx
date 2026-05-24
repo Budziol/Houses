@@ -28,25 +28,36 @@ const ImagePreview = ({ coverImage, images }: Props) => {
           />
         )}
       </div>
-      <div className="flex gap-5">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-5 w-full">
         {coverImage && (
-          <Image
-            src={coverImage}
-            alt=""
-            width={100}
-            height={100}
+          <div
+            className="relative aspect-video rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition"
             onClick={() => setImagePreview(coverImage)}
-          />
+          >
+            <Image
+              src={coverImage}
+              alt="Cover"
+              fill
+              sizes="(max-width: 768px) 140px, 200px"
+              className="object-cover"
+            />
+          </div>
         )}
+
         {images.map((image, i) => (
-          <Image
-            key={image}
-            src={image}
-            alt=""
-            width={100}
-            height={100}
+          <div
+            key={`${image}-${i}`}
+            className="relative aspect-video rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition"
             onClick={() => setImagePreview(image)}
-          />
+          >
+            <Image
+              src={image}
+              alt=""
+              fill
+              sizes="(max-width: 768px) 140px, 200px"
+              className="object-cover"
+            />
+          </div>
         ))}
       </div>
     </div>

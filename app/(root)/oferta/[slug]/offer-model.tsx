@@ -26,9 +26,9 @@ export default function Model({
 }: Props) {
   const { viewport } = useThree();
 
-  useGLTF.preload("/models/KV_House1.glb");
+  useGLTF.preload("/models/KV_House2.glb");
 
-  const { scene } = useGLTF("/models/KV_House1.glb");
+  const { scene } = useGLTF("/models/KV_House2.glb");
 
   const ref = useRef<THREE.Object3D>(null!);
 
