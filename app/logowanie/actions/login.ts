@@ -56,7 +56,6 @@ export async function login(prevState: ActionState, formData: FormData) {
       throw error;
     }
 
-    console.error(error);
     return {
       success: false,
       errors: { general: ["Coś poszło nie tak"] },

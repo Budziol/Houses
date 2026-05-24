@@ -6,7 +6,7 @@ import { RevealItem } from "@/utils/Anim/reveal-item";
 const Hero = () => {
   return (
     <RevealContainer>
-      <section id="hero" className="min-h-screen w-full flex pt-20 px-8">
+      <section id="hero" className="min-h-dvh w-full flex pt-20 px-8">
         <div className="max-w-[1440px] w-full mx-auto flex flex-col lg:flex-row gap-10">
           <div className="w-full lg:h-full flex flex-col justify-start lg:justify-center items-center lg:items-start gap-5">
             <div className="max-w-[575px] lg:mb-40 flex flex-col text-center lg:text-left">
