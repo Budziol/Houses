@@ -19,6 +19,10 @@ const BlogCard = ({ title, slug, excerpt, image }: Props) => {
             alt={slug}
             fill
             sizes="(max-width: 640px) 100vw, 50vw"
+            // Włączenie efektu blur:
+            placeholder="blur"
+            // Przykładowy, uniwersalny szary blur (Base64) wygenerowany dla małego kwadracika:
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
             className="object-cover"
           />
         ) : (

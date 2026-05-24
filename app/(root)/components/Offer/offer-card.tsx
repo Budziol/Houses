@@ -40,6 +40,10 @@ const OfferCard = ({
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 50vw"
             className="object-cover"
+            // Włączenie efektu blur:
+            placeholder="blur"
+            // Przykładowy, uniwersalny szary blur (Base64) wygenerowany dla małego kwadracika:
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
           />
         ) : (
           <div className="flex items-center justify-center h-full text-gray-400 italic text-xs">

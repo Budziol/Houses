@@ -25,6 +25,10 @@ const ImagePreview = ({ coverImage, images }: Props) => {
             fill
             sizes="100vw"
             className="object-cover"
+            // Włączenie efektu blur:
+            placeholder="blur"
+            // Przykładowy, uniwersalny szary blur (Base64) wygenerowany dla małego kwadracika:
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
           />
         )}
       </div>
@@ -40,6 +44,10 @@ const ImagePreview = ({ coverImage, images }: Props) => {
               fill
               sizes="(max-width: 768px) 140px, 200px"
               className="object-cover"
+              // Włączenie efektu blur:
+              placeholder="blur"
+              // Przykładowy, uniwersalny szary blur (Base64) wygenerowany dla małego kwadracika:
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
             />
           </div>
         )}
@@ -56,6 +64,10 @@ const ImagePreview = ({ coverImage, images }: Props) => {
               fill
               sizes="(max-width: 768px) 140px, 200px"
               className="object-cover"
+              // Włączenie efektu blur:
+              placeholder="blur"
+              // Przykładowy, uniwersalny szary blur (Base64) wygenerowany dla małego kwadracika:
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
             />
           </div>
         ))}
