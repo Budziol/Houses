@@ -28,7 +28,7 @@ const ImagePreview = ({ coverImage, images }: Props) => {
           />
         )}
       </div>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-5 w-full">
+      <div className="grid grid-cols-2 md:grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-4 md:gap-5 w-full">
         {coverImage && (
           <div
             className="relative aspect-video rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition"
